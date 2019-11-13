@@ -7,8 +7,8 @@ ifconfig
 echo "== GEO IP =="
 curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip)
 
-echo "== TRACEROUTE =="
-traceroute m.miele.com
+#echo "== TRACEROUTE =="
+#traceroute m.miele.com
 
 echo "== NOT REDIRECTED =="
 
