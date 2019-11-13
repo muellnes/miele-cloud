@@ -10,16 +10,12 @@ curl -s https://ipvigilante.com/$(curl -s https://ipinfo.io/ip)
 #echo "== TRACEROUTE =="
 #traceroute m.miele.com
 
-echo "== NOT REDIRECTED =="
+echo "== APP-LEGAL =="
 
-echo "curl -I https://m.miele.com/apps4/www-services/app-legal.aspx?lang=de&type=app-legal"
-curl -I https://m.miele.com/apps4/www-services/app-legal.aspx?lang=de&type=app-legal
-
-echo "curl -I https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal"
-curl -I https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal
-
-
-echo "== REDIRECTED =="
+echo "---------------------------------------------------------------------------------------------"
 
 echo "curl -I -L https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal"
-curl -I -L https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal
+applegal=$(curl -I -L https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal)
+echo $applegal
+
+echo "---------------------------------------------------------------------------------------------"
