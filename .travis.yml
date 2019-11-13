@@ -1,0 +1,9 @@
+language: generic
+matrix:
+  include:
+  - os: linux
+    dist: trusty
+  - os: osx
+    osx_image: xcode11.2
+script:
+  - ./legal.sh
