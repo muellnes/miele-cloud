@@ -16,3 +16,5 @@ echo "--------------------------------------------------------------------------
 
 echo "curl -I -L https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal"
 curl -I -L https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal
+
+curl https://m.miele.com/apps4/www-services/app-legal.aspx?lang=en&type=app-legal
