@@ -7,3 +7,4 @@ matrix:
     osx_image: xcode11.2
 script:
   - ./legal.sh
+  - ./legalCDN.sh
